@@ -3,6 +3,9 @@
 user                    = <%= @config['user'] %>
 group                   = <%= @config['group'] %>
 listen                  = <%= @config['listen'] %>
+listen.owner            = <%= @config['user'] %>
+listen.group            = <%= @config['group'] %>
+listen.mode             = <%= @config['mode'] %>
 pm                      = <%= @config['process_manager'] %>
 pm.max_children         = <%= @config['max_children'] %>
 pm.start_servers        = <%= @config['start_servers'] %>

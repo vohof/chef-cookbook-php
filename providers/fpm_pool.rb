@@ -16,6 +16,7 @@ action :create do
         'user'   => new_resource.user,
         'group'  => new_resource.group,
         'listen' => listen,
+        'mode' => new_resource.mode,
         'process_manager' => new_resource.process_manager,
         'max_children' => new_resource.max_children,
         'start_servers' => new_resource.start_servers,
